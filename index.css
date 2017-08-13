@@ -41,3 +41,15 @@ h1 {
 	font-weight: 100;
 	padding-top: 30px;
 }
+
+.tooltip-box {
+	color: black;
+	position: absolute;
+	left: 25%;
+	top: 20%;
+	padding-left: 10px;
+	border-left-style: solid;
+	text-align: center;
+	border-color: red;
+
+}

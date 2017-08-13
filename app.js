@@ -22,8 +22,20 @@ document.getElementById("main-bttn").addEventListener("click", function(e) {
                 const scriptSection = document.createElement('div');
                 scriptSection.className = "header-section";
                 scriptSection.textContent = script;
+                let toolTipBox;
                 scriptSection.addEventListener("mouseover", function(e) {
-                    console.log("mousey")
+                    
+                    if(!toolTipBox) {
+                    toolTipBox = document.createElement('div');
+                    toolTipBox.textContent = pkgJSON.scripts[script];
+                    toolTipBox.className = "tooltip-box";
+                    scriptSection.appendChild(toolTipBox)
+                    } else {
+                         scriptSection.appendChild(toolTipBox)
+                    }
+                });
+                 scriptSection.addEventListener("mouseleave", function(e) {
+                    e.target.removeChild(e.target.children[0]);
                 })
                 headerMenu.appendChild(scriptSection);
             })
