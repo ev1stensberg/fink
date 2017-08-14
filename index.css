@@ -22,6 +22,15 @@ h1 {
 	right: 2%;
 	top: 2%;
 }
+.main-terminal {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: black;
+	opacity: 0.2;
+	height: 75vh;
+	width: 75vw;
+}
 
 .main-bttn-container {
 	position: absolute;
@@ -40,16 +49,21 @@ h1 {
 	text-align: center;
 	font-weight: 100;
 	padding-top: 30px;
+	font-size: 2.25vw;
+	padding-top: 10vh;
 }
 
 .tooltip-box {
-	color: black;
-	position: absolute;
-	left: 25%;
-	top: 20%;
-	padding-left: 10px;
+	position: fixed;
+	top: 0vh;
+	left: 25vw;
+	color: rgba(128, 137, 255, 0.8);
+	padding-left: 2vw;
+	padding-top: 5vh;
+	font-size: 2.25vw;
+	font-weight: 100;
+	width: 50vw;
+	height: 20vh;
 	border-left-style: solid;
-	text-align: center;
-	border-color: red;
-
+	border-color: rgba(128, 137, 255, 1);
 }
